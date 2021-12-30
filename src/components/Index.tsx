@@ -1,4 +1,4 @@
-import { SyntheticEvent, useState } from "react";
+import { useState } from "react";
 import useStore from "../store";
 import styled from "styled-components";
 import hikaru from "../hikaru.json";
