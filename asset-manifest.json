@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hikaru-challenge/static/css/main.e9d466a3.css",
+    "main.js": "/hikaru-challenge/static/js/main.9d787404.js",
+    "index.html": "/hikaru-challenge/index.html",
+    "main.e9d466a3.css.map": "/hikaru-challenge/static/css/main.e9d466a3.css.map",
+    "main.9d787404.js.map": "/hikaru-challenge/static/js/main.9d787404.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9d466a3.css",
+    "static/js/main.9d787404.js"
+  ]
+}
