@@ -24,7 +24,7 @@ export const setCurrentVideoIndex = (
 export const getIndexFromVideoId = (videoId: string | undefined): number | undefined=> {
   if (videoId === undefined) return undefined;
   
-  const videoIndex = hikaru.find(video => video.contentDetails.videoId === videoId)
+  const videoIndex = hikaru.find(video => video.id === videoId)
   if (videoIndex !== undefined) return videoIndex.index;
   return undefined;
 };
