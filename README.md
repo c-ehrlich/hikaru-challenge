@@ -2,7 +2,7 @@
 
 ### About
 This app is two things:
-1. An easy way to watch all Hikaru videos and keep track of where you are
+1. An easy way to watch all Hikaru videos and keep track of where you are. It uses LocalStorage, so progress is saved between sessions.
 2. It can easily be adjusted to track any other playlist of videos by using a different JSON file.
 
 ### What's the point?
