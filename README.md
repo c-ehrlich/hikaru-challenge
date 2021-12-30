@@ -11,13 +11,21 @@ A couple of [Immersion Language Learners](https://discord.gg/XuwYR4Wy6j) wanted 
 
 ## Installation and Setup
 Clone down this repository. You will need node and npm installed globally on your machine.
+
 Installing Dependencies:
+
 `npm install`
+
 To Start Server:
+
 `npm start`
+
 To Visit App:
+
 `localhost:3000`
+
 To deploy to GitHub Pages:
+
 [See Create-React-App Documentation](https://create-react-app.dev/docs/deployment/#github-pages)
 
 ## Todo
