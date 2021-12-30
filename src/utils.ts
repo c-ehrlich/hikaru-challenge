@@ -21,10 +21,12 @@ export const setCurrentVideoIndex = (
   return newIndex;
 };
 
-export const getIndexFromVideoId = (videoId: string | undefined): number | undefined=> {
+export const getIndexFromVideoId = (
+  videoId: string | undefined
+): number | undefined => {
   if (videoId === undefined) return undefined;
-  
-  const videoIndex = hikaru.find(video => video.id === videoId)
+
+  const videoIndex = hikaru.find((video) => video.id === videoId);
   if (videoIndex !== undefined) return videoIndex.index;
   return undefined;
 };
@@ -39,4 +41,12 @@ export const getVideoIdFromUrl = (url: string): string | undefined => {
   } else {
     return undefined;
   }
+};
+
+export const isNumber = (input: string): boolean => {
+  if (typeof input != "string") return false; // we only process strings!
+  return (
+    !isNaN(Number(input)) && // use type coercion to parse the _entirety_ of the string (`parseFloat` alone does not do this)...
+    !isNaN(parseInt(input))
+  ); // ...and ensure strings of whitespace fail
 };
