@@ -1,3 +1,7 @@
+import hikaru from "./hikaru.json";
+
+const numberOfVideos = hikaru.length + 1;
+
 export const getCurrentVideoIndexFromLocalStorage = (): number => {
   const localStorageValue: string | null = localStorage.getItem("hikaru-index");
   if (localStorageValue === null) {
@@ -7,7 +11,9 @@ export const getCurrentVideoIndexFromLocalStorage = (): number => {
   }
 }
 
-export const setCurrentVideoIndex = (videoIndex: number): number => {
-  localStorage.setItem('hikaru-index', videoIndex.toString());
-  return videoIndex;
+export const setCurrentVideoIndex = (newIndex: number, currentIndex: number): number => {
+  if (newIndex < 1 || newIndex > numberOfVideos) return currentIndex;
+  
+  localStorage.setItem('hikaru-index', newIndex.toString());
+  return newIndex;
 }
