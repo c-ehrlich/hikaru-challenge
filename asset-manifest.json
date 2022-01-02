@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/hikaru-challenge/static/css/main.e9d466a3.css",
-    "main.js": "/hikaru-challenge/static/js/main.ab6ca47e.js",
+    "main.js": "/hikaru-challenge/static/js/main.afcf224f.js",
     "index.html": "/hikaru-challenge/index.html",
     "main.e9d466a3.css.map": "/hikaru-challenge/static/css/main.e9d466a3.css.map",
-    "main.ab6ca47e.js.map": "/hikaru-challenge/static/js/main.ab6ca47e.js.map"
+    "main.afcf224f.js.map": "/hikaru-challenge/static/js/main.afcf224f.js.map"
   },
   "entrypoints": [
     "static/css/main.e9d466a3.css",
-    "static/js/main.ab6ca47e.js"
+    "static/js/main.afcf224f.js"
   ]
 }
