@@ -25,6 +25,7 @@ const StyledVideo = styled.div`
 `;
 
 const EmbedContainer = styled.div`
+  &.w100vw { width: 100vw; }
   &.w480 { width: 480px; }
   &.w720 { width: 720px; }
   &.w1280 { width: 1280px; }
@@ -55,6 +56,7 @@ const Video = () => {
           <FlexColumnNoGap>
             <div>video width</div>
             <ButtonRow>
+              <button onClick={() => setPlayerClass("w100vw")}>auto</button>
               <button onClick={() => setPlayerClass("w480")}>480px</button>
               <button onClick={() => setPlayerClass("w720")}>720px</button>
               <button onClick={() => setPlayerClass("w1280")}>1280px</button>
