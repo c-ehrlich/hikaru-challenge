@@ -7,11 +7,16 @@ const StyledSetIndex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
 `;
 
 const SetIndexInput = styled.input`
   width: 300px;
   max-width: 90%;
+`;
+
+const CenterText = styled.div`
+  text-align: center;
 `;
 
 const SetIndex = () => {
@@ -37,10 +42,10 @@ const SetIndex = () => {
     <StyledSetIndex>
       <SetIndexInput value={searchBar} onChange={handleInputURL} />
       {searchIndex && <button onClick={handleSetIndex}>{`Set index to ${searchIndex}`}</button>}
-      <p>
+      <CenterText>
         If you don't know your current index, paste a Hikaru video URL in here
         and it will be calculated
-      </p>
+      </CenterText>
     </StyledSetIndex>
   );
 };
