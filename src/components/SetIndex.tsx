@@ -7,7 +7,8 @@ const StyledSetIndex = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
+  margin-bottom: 8px;
 `;
 
 const SetIndexInput = styled.input`
