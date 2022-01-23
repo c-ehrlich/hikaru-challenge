@@ -1,6 +1,6 @@
 import hikaru from "./hikaru.json";
 
-const numberOfVideos = hikaru.length + 1;
+const numberOfVideos = hikaru.length;
 
 export const getCurrentVideoIndexFromLocalStorage = (): number => {
   const localStorageValue: string | null = localStorage.getItem("hikaru-index");
